@@ -1,0 +1,19 @@
+:root {  
+    --background-blanco: #FFFFFF;
+    --background-azul-claro: #DFE3F5;
+
+    --boton-rojo: #B72E2E;
+
+    --fuente-enlace: #0006FF;
+
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open sans', sans-serif;
+}
+
+body{
+    font-family: var(--montserrat);
+}
+.container {
+    padding-left: calc((100% - 940px)/2);
+    padding-right: calc((100% - 940px)/2);
+}
