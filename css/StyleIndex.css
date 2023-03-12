@@ -155,7 +155,7 @@
 .card_member .buttonPortfolio:hover, 
 .card_member .buttonPortfolio:focus {
     scale: 1.03;
-    transition-duration: .2s;
+    transition-duration: .5s;
 }
 
 .card_member a.portfolio {
