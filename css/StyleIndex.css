@@ -1,190 +1,73 @@
-@font-face {
-    font-family: 'MODENINE';
-    src: url('../fonts/MODENINE.woff') format('woff');
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    --bg-color-1: #973bc3;
-    --bg-color-2: #efefff;
-    --bg-color-3: #C3C3FF;
-    --bg-header: #7b5b9c;
-    --text-color: #a293c1;
-
-    --fuente-ceniza-oscuro: #4F4C4C;
-    /*color3: #291035;
-    --bg-header: #7b5b9c;
-    color5: #a293c1;*/
-}
-
-html {
-    box-sizing: border-box;
-    content: '';
-}
-
-body {
+.BannerImages {
+    position: relative;
     width: 100%;
-    height: 100%;
-    background-color: var(--bg-color-2);
-    /*background-image: url("../images/MysthickArkTexture.png");
-    background-size: 25rem;*/
-}
+    height: 90ch;
+    margin-bottom: 4rem;
 
-header {
-    display: block;
-    width: 100%;
-    height: 5vh;
-    background-color: var(--bg-header);
-}
-
-/* Header */
-
-.navegator {
-    list-style: none;
-}
-
-.navegator nav {
-    float: right;
-}
-
-.navegator nav ul li {
-    list-style: none;
-    float: left;
-    /*padding-left: 40px;*/
-    margin: 12px 25px 0 20px;
-
-}
-
-.navegator nav ul li a {
-    font-family: 'MODENINE';
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-/* Banner */
-
-.BannerLogo {
     user-select: none;
     -webkit-user-select: none;
+}
+
+.BannerImages img {
+    position: absolute;
+}
+
+.BannerImages img:nth-of-type(1){
+    height: 90ch;
     width: 100%;
 }
 
-/* About Us */
+/* Home */
 
-.AboutUs{
+.Home {
+    display: flex;
     width: 100%;
-    height: 50vh;
-    margin-top: 40px;
-    text-align: center;
+    height: 100vh;
 }
 
-.AboutUsTitle {
-    text-align: center;
-    font-size: 40px;
-    color: var(--bg-header);
+.TextContainer {
+    margin: 80px 120px;
 }
 
-.AboutUsText {
-    margin: 20px auto;
+.TextContainer h2.AboutUsTitle {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.TextContainer p.AboutUsText {
     font-size: 20px;
-    text-align: center;
-    color: black;
-
+    line-height: 1.7rem;
 }
-/* Team */
 
-.Team {
+.iconFeatures {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-.TeamTitle {
-    margin-bottom: 40px;
-    font-size: 40px;
-    color: var(--bg-header);
-}
-
-.cardsMembers {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card_member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 20px;
-    background-color: var(--bg-color-3);
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px 2px #00000010;
-    padding-bottom: 15px;
     user-select: none;
     -webkit-user-select: none;
 }
 
-.card_member img {
-    height: 10rem;
+.iconFeatures ul{
+    display: flex;
+    list-style: none;
 }
 
-.card_member h3 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: var();
-}
-  
-.card_member p.occupation {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 10px;
-}
-  
-.card_member p.description {
-    text-align: center;
-    padding: 0 20px; 
-    margin-bottom: 9px;
+.iconFeatures ul li {
+    margin: 80px 30px;
 }
 
-.card_member .buttonPortfolio {
-    background-color: #6A2439;
-    border-radius: 10px;
-    border-style: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 700;
-    line-height: 1.5;
-    max-width: none;
-    min-height: 40px;
-    min-width: 10px;
-    margin-top: auto;
-    overflow: hidden;
-    padding: 9px 20px 8px;
-    text-transform: none;
-    touch-action: manipulation; 
+.iconFeatures img {
+    max-width: 70px;
+    height: 70px;
 }
 
-.card_member .buttonPortfolio:hover, 
-.card_member .buttonPortfolio:focus {
-    scale: 1.03;
-    transition-duration: .2s;
+.RenderMain {
+    margin: auto 10rem;
+    width: 60%;
+    height: 90%;
 }
 
-.card_member a.portfolio {
-    text-align: center;
-    padding-top: 20px;    
-    color: white;
-    text-decoration: none;
-}
+
 
 /* Footer */
 
@@ -192,7 +75,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg-header);
+    background-color: var(--color-header);
     padding-top: 2.5rem;
     padding-bottom: 2rem;
     user-select: none;
