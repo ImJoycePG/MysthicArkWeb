@@ -1,107 +1,95 @@
-
 /* Banner */
 
 .BannerImages {
-    position: relative;
     width: 100%;
-    height: 90ch;
-
-    user-select: none;
-    -webkit-user-select: none;
+    height: 20ch;
 }
 
-.BannerImages img {
+.BannerImages img{
     position: absolute;
 }
 
 .BannerImages img:nth-of-type(1){
-    height: 90ch;
     width: 100%;
+    height: 20ch;
 }
 
 /* Home */
 
 .Home {
-    display: flex;
     width: 100%;
-    height: 80vh;
-    margin-top: 3rem;
+    height: auto;
+    margin-top: 2rem;
     user-select: none;
     -webkit-user-select: none;
 }
 
 .TextContainer {
-    width: 40%;
-    margin: 80px 120px;
+    margin: auto 20px;
 }
 
 .TextContainer h2.AboutUsTitle {
-    font-size: 30px;
-    padding-bottom: 20px;
     font-family: var(--montserrat);
     color: var(--color-1);
+    padding-bottom: 20px;
 }
 
 .TextContainer p.AboutUsText {
-    font-size: 20px;
-    line-height: 1.7rem;
+    line-height: 1.2rem;
     font-family: var(--open-sans);
 }
 
 .iconFeatures {
-    display: flex;
-    margin-left: 3rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .iconFeatures ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
 }
 
 .iconFeatures ul li {
-    margin: 80px 30px;
+    margin: 20px 30px;
 }
 
 .iconFeatures img {
-    max-width: 70px;
+    width: 70px;
     height: 70px;
     background-color: #b98668;
     border-radius: 10px;
     padding: 5px;
 }
 
-.iconFeatures img:hover {
-    transform: translateY(-10px);
-    transition-duration: .5s;
-}
-
 .iconFeatures figcaption {
     font-family: var(--montserrat);
     font-style: oblique;
+    text-align: center;
 }
 
 .RenderMain {
-    width: 30rem;
-    height: 45rem;
-    margin: 2rem auto;
+    width: 15rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 /* Team */
 
 .Team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    width: 100%;
+    height: auto;
     user-select: none;
     -webkit-user-select: none;
 }
 
 .TeamTitle {
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 25px;
     color: var(--bg-header);
+    text-align: center;
 }
 
 .cardsMembers {
@@ -114,28 +102,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 100%;
     margin: 20px;
     background-color: var(--bg-color-3);
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 5px 2px #00000010;
     padding-bottom: 15px;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.card_member img {
-    height: 10rem;
 }
 
 .card_member h3 {
     font-family: var(--montserrat);
-    font-size: 24px;
+    font-size: 18px;
     margin: 10px 0;
 
 }
-  
+
 .card_member p.occupation {
     font-style: italic;
     font-family: 'MAKISUPA';
@@ -147,7 +129,6 @@
     text-align: center;
     padding: 2px 10px 9px; 
     font-family: var(--open-sans);
-
 }
 
 .card_member .buttonPortfolio {
@@ -168,12 +149,6 @@
     touch-action: manipulation; 
 }
 
-.card_member .buttonPortfolio:hover, 
-.card_member .buttonPortfolio:focus {
-    scale: 1.03;
-    transition-duration: .5s;
-}
-
 .card_member a.portfolio {
     text-align: center;
     padding-top: 20px;    
@@ -186,35 +161,33 @@
 
 .footer{
     display: flex;
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-header);
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     user-select: none;
     -webkit-user-select: none;
 }
 
 .footer_copy {
+    margin-left: 1.3rem;
     flex-direction: column;
 }
 
 .footer_logo {
-    width: 15rem;
+    width: 8rem;
     height: auto;
     margin-left: 1rem;
-    transition-duration: .5s;
-}
-
-.footer_logo:hover {
-    scale: 1.03;
     transition-duration: .5s;
 }
 
 .footer_text {
     color: #ddd;
     font-weight: bold;
-    font-size: .75rem;
+    font-size: .65rem;
     text-align: center;
     
 }
@@ -222,15 +195,315 @@
 .footer_social {
     display: flex;
     list-style: none;
+    margin-right: 1.3rem;
 }
 
 .icon {
-    max-width: 3.5rem;
-    margin-left: 1rem;
+    max-width: 2.2rem;
+    margin-left: .8rem;
     transition-duration: .5s;
 }
 
-.icon:hover {
-    transform: translateY(-10px);
-    transition-duration: .5s;
+
+@media screen and (min-width: 900px){
+        /* Banner */
+
+    .BannerImages {
+        position: relative;
+        width: 100%;
+        height: 75ch;
+
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .BannerImages img {
+        position: absolute;
+    }
+
+    .BannerImages img:nth-of-type(1){
+        height: 75ch;
+        width: 100%;
+    }
+
+        /* Home */
+
+    .Home {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        margin-top: 3rem;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .TextContainer {
+        width: 40%;
+        margin: 80px 120px;
+    }
+
+    .TextContainer h2.AboutUsTitle {
+        font-size: 30px;
+        padding-bottom: 20px;
+        font-family: var(--montserrat);
+        color: var(--color-1);
+    }
+
+    .TextContainer p.AboutUsText {
+        font-size: 20px;
+        line-height: 1.7rem;
+        font-family: var(--open-sans);
+    }
+
+    .iconFeatures {
+        display: flex;
+        margin-left: 3rem;
+        text-align: center;
+    }
+
+    .iconFeatures ul{
+        display: flex;
+        list-style: none;
+    }
+
+    .iconFeatures ul li {
+        margin: 80px 30px;
+    }
+
+    .iconFeatures img {
+        max-width: 70px;
+        height: 70px;
+        background-color: #b98668;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .iconFeatures img:hover {
+        transform: translateY(-10px);
+        transition-duration: .5s;
+    }
+
+    .iconFeatures figcaption {
+        font-family: var(--montserrat);
+        font-style: oblique;
+    }
+
+    .RenderMain {
+        width: 30rem;
+        height: 45rem;
+        margin: 2rem auto;
+    }
+
+    /* Team */
+
+    .Team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .TeamTitle {
+        margin-bottom: 40px;
+        font-size: 40px;
+        color: var(--bg-header);
+    }
+
+    .cardsMembers {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card_member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin: 20px;
+        background-color: var(--bg-color-3);
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px 2px #00000010;
+        padding-bottom: 15px;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .card_member img {
+        height: 10rem;
+    }
+
+    .card_member h3 {
+        font-family: var(--montserrat);
+        font-size: 24px;
+        margin: 10px 0;
+
+    }
+    
+    .card_member p.occupation {
+        font-style: italic;
+        font-family: 'MAKISUPA';
+        color: #bb4500;
+        margin-bottom: 10px;
+    }
+    
+    .card_member p.description {
+        text-align: center;
+        padding: 2px 10px 9px; 
+        font-family: var(--open-sans);
+
+    }
+
+    .card_member .buttonPortfolio {
+        background-color: #6A2439;
+        border-radius: 10px;
+        border-style: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: 700;
+        line-height: 1.5;
+        max-width: none;
+        min-height: 40px;
+        min-width: 10px;
+        margin-top: auto;
+        overflow: hidden;
+        padding: 9px 20px 8px;
+        text-transform: none;
+        touch-action: manipulation; 
+    }
+
+    .card_member .buttonPortfolio:hover, 
+    .card_member .buttonPortfolio:focus {
+        scale: 1.03;
+        transition-duration: .5s;
+    }
+
+    .card_member a.portfolio {
+        text-align: center;
+        padding-top: 20px;    
+        color: white;
+        text-decoration: none;
+        font-family: var(--montserrat);
+    }
+
+    /* Footer */
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-header);
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .footer_copy {
+        flex-direction: column;
+    }
+
+    .footer_logo {
+        width: 15rem;
+        height: auto;
+        margin-left: 1rem;
+        transition-duration: .5s;
+    }
+
+    .footer_logo:hover {
+        scale: 1.03;
+        transition-duration: .5s;
+    }
+
+    .footer_text {
+        color: #ddd;
+        font-weight: bold;
+        font-size: .75rem;
+        text-align: center;
+        
+    }
+
+    .footer_social {
+        display: flex;
+        list-style: none;
+    }
+
+    .icon {
+        max-width: 3.5rem;
+        margin-left: 1rem;
+        transition-duration: .5s;
+    }
+
+    .icon:hover {
+        transform: translateY(-10px);
+        transition-duration: .5s;
+    }
+
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
 }
+
+
+@media screen and (min-width: 600px){
+
+    /* Banner */
+
+    .BannerImages {
+        height: 30ch;
+    }
+
+    .BannerImages img:nth-of-type(1){
+        height: 30ch;
+    }
+
+    /* Home */
+
+    .TextContainer {
+        margin: auto 40px;
+    }
+
+    .TextContainer p.AboutUsText {
+        font-size: 20px;
+    }
+
+    .iconFeatures ul li {
+        margin: 20px 30px;
+    }
+
+    /* Team */
+
+    .TeamTitle {
+        font-size: 30px;
+    }
+
+    
+    .card_member {
+        width: 80%;
+        margin: 30px;
+    }
+
+    /* Footer */
+
+    .footer_copy {
+        margin-left: 4rem;
+    }
+
+    .footer_social {
+        margin-right: 4rem;
+    }
+
+}
+
+
+@media screen and (min-width: 300px){
+    .RenderMain {
+        margin-left: 3rem;
+    }
+}
+
+
