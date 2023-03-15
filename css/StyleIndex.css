@@ -206,7 +206,7 @@
 
 
 @media screen and (min-width: 900px){
-        /* Banner */
+     /* Banner */
 
     .BannerImages {
         position: relative;
@@ -226,7 +226,7 @@
         width: 100%;
     }
 
-        /* Home */
+    /* Home */
 
     .Home {
         display: flex;
@@ -448,62 +448,10 @@
     }
 }
 
-
-@media screen and (min-width: 600px){
-
-    /* Banner */
-
-    .BannerImages {
-        height: 30ch;
-    }
-
-    .BannerImages img:nth-of-type(1){
-        height: 30ch;
-    }
-
-    /* Home */
-
-    .TextContainer {
-        margin: auto 40px;
-    }
-
-    .TextContainer p.AboutUsText {
-        font-size: 20px;
-    }
-
-    .iconFeatures ul li {
-        margin: 20px 30px;
-    }
-
-    /* Team */
-
-    .TeamTitle {
-        font-size: 30px;
-    }
-
-    
-    .card_member {
-        width: 80%;
-        margin: 30px;
-    }
-
-    /* Footer */
-
-    .footer_copy {
-        margin-left: 4rem;
-    }
-
-    .footer_social {
-        margin-right: 4rem;
-    }
-
-}
-
-
-@media screen and (min-width: 300px){
+@media screen and (width <= 899px){
     .RenderMain {
-        margin-left: 3rem;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
 }
-
-
