@@ -92,7 +92,7 @@
 .TeamTitle {
     margin-bottom: 40px;
     font-size: 25px;
-    color: var(--bg-header);
+    color: var(--color-header);
     text-align: center;
 }
 
@@ -108,7 +108,7 @@
     align-items: center;
     width: 100%;
     margin: 20px;
-    background-color: var(--bg-color-3);
+    background-color: var(--color-3);
     border: 1px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 2px 5px 2px #00000010;
@@ -331,7 +331,7 @@
         align-items: center;
         width: 300px;
         margin: 20px;
-        background-color: var(--bg-color-3);
+        background-color: var(--color-3);
         border: 1px solid #ddd;
         border-radius: 20px;
         box-shadow: 0 2px 5px 2px #00000010;
